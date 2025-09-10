@@ -1,0 +1,577 @@
+type: collection.insomnia.rest/5.0
+name: Spring HTTP
+meta:
+  id: wrk_8b49304b9c1b4a4bbf1b0bbeb53ef8d2
+  created: 1757464266733
+  modified: 1757464266733
+  description: ""
+collection:
+  - url: http://localhost:8080/auth/authenticate
+    name: 2 AUTENTICAR
+    meta:
+      id: req_33e6b75654e5420ba36cd1e20cb1f9ef
+      created: 1757442824740
+      modified: 1757464523872
+      isPrivate: false
+      description: ""
+      sortKey: -1757442824740
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "email": "admin1@example.com",
+          "password": "Password123!"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjQyODksImV4cCI6MTc1NzU1MDY4OX0.UA1ndzB8oEmt1Cud2Yc6kU0Itr37QteosyxbYbDyxdn5EtLH0C1oDMCJHwn-D0Fqky2dQDjgawHsQkSQbuKElw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/auth/register
+    name: 1 CREAR ADMIN
+    meta:
+      id: req_21d19e210a7f49b385c264560b431b7e
+      created: 1757442885050
+      modified: 1757464512369
+      isPrivate: false
+      description: ""
+      sortKey: -1757442628064
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "firstName": "juaceto",
+          "lastName": "Principal1",
+          "email": "admin1@example.com",
+          "password": "Password123!",
+          "role": "ADMIN"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/users/1
+    name: 3 VER USER
+    meta:
+      id: req_a77506c03e1b40289c45f2fe6d591ecb
+      created: 1757443232890
+      modified: 1757464530485
+      isPrivate: false
+      description: ""
+      sortKey: -1757443232890
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjQzMDksImV4cCI6MTc1NzU1MDcwOX0.xi_bI1BjAMNYz-r4fCt0GG4KFJ2mwNvvPG1nxA35jPgyuECOruk14zEdLKVMZ-5rccnq1HdOGoyyaCB2KiZYdw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/categories
+    name: 5 VER CATEGORIAS
+    meta:
+      id: req_c4c169c8d94646a98e90828c4663747f
+      created: 1757443975964
+      modified: 1757464558414
+      isPrivate: false
+      description: ""
+      sortKey: -1757445565525.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjI3NDYsImV4cCI6MTc1NzU0OTE0Nn0.SmavQF8lRflS1xoyE1b_vLJ9FxeAMF7XfsFh37S_IPkHTcRSp3hD11AQYKXhArKb_2kn04O5xIYjJIWZagSm_A
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products/1
+    name: 7 VER PRODUCTOS
+    meta:
+      id: req_243195091a2a4c128aa9036ef03cbdf0
+      created: 1757444135575
+      modified: 1757464599823
+      isPrivate: false
+      description: ""
+      sortKey: -1757446045561
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjI3NDYsImV4cCI6MTc1NzU0OTE0Nn0.SmavQF8lRflS1xoyE1b_vLJ9FxeAMF7XfsFh37S_IPkHTcRSp3hD11AQYKXhArKb_2kn04O5xIYjJIWZagSm_A
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/categories
+    name: 4 CREAR CATEGORIA
+    meta:
+      id: req_01d639af5873442ba23cb72218109aab
+      created: 1757445338477
+      modified: 1757464547907
+      isPrivate: false
+      description: ""
+      sortKey: -1757445338477
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "name": "XIOMI",
+          "description": "Categoría de Xiaomi"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjQzMDksImV4cCI6MTc1NzU1MDcwOX0.xi_bI1BjAMNYz-r4fCt0GG4KFJ2mwNvvPG1nxA35jPgyuECOruk14zEdLKVMZ-5rccnq1HdOGoyyaCB2KiZYdw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products
+    name: 6 CREAR PRODUCTOS
+    meta:
+      id: req_2243bcf7befc482b8d606320242d2642
+      created: 1757445792574
+      modified: 1757464582912
+      isPrivate: false
+      description: ""
+      sortKey: -1757445792574
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "xiaomi 55",
+          "description": "Modelo de prueba",
+          "price": 1000.0,
+          "stock": 5,
+        	"category": "XIOMI"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjQzMDksImV4cCI6MTc1NzU1MDcwOX0.xi_bI1BjAMNYz-r4fCt0GG4KFJ2mwNvvPG1nxA35jPgyuECOruk14zEdLKVMZ-5rccnq1HdOGoyyaCB2KiZYdw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/admin/discounts
+    name: 8 CREAR DESCUENTO
+    meta:
+      id: req_6558bab35e0542219f528b5f3ae81fc1
+      created: 1757459591907
+      modified: 1757464649117
+      isPrivate: false
+      description: ""
+      sortKey: -1757459591907
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "code": "TEST10",
+          "percentage": 10.0,
+          "active": true,
+          "startsAt": "2025-09-01T00:00:00",
+          "endsAt": "2025-12-31T23:59:59"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjFAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTc0NjQzMDksImV4cCI6MTc1NzU1MDcwOX0.xi_bI1BjAMNYz-r4fCt0GG4KFJ2mwNvvPG1nxA35jPgyuECOruk14zEdLKVMZ-5rccnq1HdOGoyyaCB2KiZYdw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/auth/register
+    name: 9 CREAR USUARIO USER
+    meta:
+      id: req_f6b6a6f5a184493e90c550e13eb74393
+      created: 1757460019814
+      modified: 1757464670059
+      isPrivate: false
+      description: ""
+      sortKey: -1757460019814
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "firstName": "Juan",
+          "lastName": "Pérez",
+          "email": "juan@test.com",
+          "password": "1234",
+          "role": "USER"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDYwMDYwLCJleHAiOjE3NTc1NDY0NjB9.DHxyqSUZ22o9KegGpSa3oQVTlkwmIvKh5kxufhRC8kTRnVtRhV3G92O5dG-bT96-JgOuggIqLpk9VpSxG4d_Ow
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/auth/authenticate
+    name: 10 LOGIN USUARIO
+    meta:
+      id: req_ccb76060329f49b98ffd38325e53ce79
+      created: 1757460092278
+      modified: 1757464685367
+      isPrivate: false
+      description: ""
+      sortKey: -1757460092278
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "email": "juan@test.com",
+          "password": "1234"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: '	"access_token":
+        "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzU0LCJleHAiOjE3NTc1NTA3NTR9.qWzhmSaREBk75hnePaiXSfPMAmjQxexm50UJzqUVl4EgYmS7bmGO--nnguSwB3TqkDOIMtXQ5e11ViqT3Qq_2A"'
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/carts/add
+    name: 11 CREAR CARRITO AGREGANDO ITEM
+    meta:
+      id: req_2cee4b232fe4442ba4342ba21a1b14e1
+      created: 1757460210596
+      modified: 1757464717943
+      isPrivate: false
+      description: ""
+      sortKey: -1757460210596
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "userId": 2,
+          "item": {
+            "productId": 1,
+            "quantity": 2
+          }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzY5LCJleHAiOjE3NTc1NTA3Njl9.T0e-Y2L3TOJyy_JEwWKVGmnux_vMc5wcdkWYFjfot28VTA2ZfvwKHDbdAN6tkb5hpXNm1PXzVmZVnssiJX9aEg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/carts/2
+    name: 12 VER CARRITO
+    meta:
+      id: req_57dcf80a70ea4b1182139d0f943dcc13
+      created: 1757460824681
+      modified: 1757464730036
+      isPrivate: false
+      description: ""
+      sortKey: -1757460824681
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDYyOTI1LCJleHAiOjE3NTc1NDkzMjV9.K1gYcNlkM9SFNGsY4lwA9EkFTsxKZfx_l80P5NRLj3WoFwrxFfqeLphcumTOg7SoqByTT_Zpi9MTCCHYOm6DzQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/carts/2/item/1
+    name: 13 BORRAR ITEM DEL CARRITO
+    meta:
+      id: req_d74b726d82ce4b478355b66f29a38351
+      created: 1757461123024
+      modified: 1757464742932
+      isPrivate: false
+      description: ""
+      sortKey: -1757461123024
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDYyOTI1LCJleHAiOjE3NTc1NDkzMjV9.K1gYcNlkM9SFNGsY4lwA9EkFTsxKZfx_l80P5NRLj3WoFwrxFfqeLphcumTOg7SoqByTT_Zpi9MTCCHYOm6DzQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/carts/add
+    name: 14 AGREGAR ITEM DE NUEVO
+    meta:
+      id: req_780986391a4047de8dd244a1d5025d6e
+      created: 1757461204507
+      modified: 1757464755551
+      isPrivate: false
+      description: ""
+      sortKey: -1757461204507
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "userId": 2,
+          "item": {
+            "productId": 1,
+            "quantity": 2
+          }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDYyOTI1LCJleHAiOjE3NTc1NDkzMjV9.K1gYcNlkM9SFNGsY4lwA9EkFTsxKZfx_l80P5NRLj3WoFwrxFfqeLphcumTOg7SoqByTT_Zpi9MTCCHYOm6DzQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cart/discounts/apply
+    name: 15 USAR DESCUENTO
+    meta:
+      id: req_d10f1c9d33f743ed80933285db730f99
+      created: 1757461385143
+      modified: 1757464771710
+      isPrivate: false
+      description: ""
+      sortKey: -1757461385143
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        
+        {
+          "code": "TEST10"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzY5LCJleHAiOjE3NTc1NTA3Njl9.T0e-Y2L3TOJyy_JEwWKVGmnux_vMc5wcdkWYFjfot28VTA2ZfvwKHDbdAN6tkb5hpXNm1PXzVmZVnssiJX9aEg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/orders/checkout
+    name: 16 MOSTRAR ORDEN
+    meta:
+      id: req_03c921eb2b0d43d693f5a1097fc90810
+      created: 1757461660944
+      modified: 1757464785193
+      isPrivate: false
+      description: ""
+      sortKey: -1757461660944
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzY5LCJleHAiOjE3NTc1NTA3Njl9.T0e-Y2L3TOJyy_JEwWKVGmnux_vMc5wcdkWYFjfot28VTA2ZfvwKHDbdAN6tkb5hpXNm1PXzVmZVnssiJX9aEg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/payments
+    name: 17 PAGAR
+    meta:
+      id: req_a63bfc017565444babf733e3ce897bda
+      created: 1757462006451
+      modified: 1757464792886
+      isPrivate: false
+      description: ""
+      sortKey: -1757462006451
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "orderId": 1,
+          "amount": 1800.00,
+          "method": "CREDIT_CARD",
+          "status": "COMPLETED"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzY5LCJleHAiOjE3NTc1NTA3Njl9.T0e-Y2L3TOJyy_JEwWKVGmnux_vMc5wcdkWYFjfot28VTA2ZfvwKHDbdAN6tkb5hpXNm1PXzVmZVnssiJX9aEg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/carts/2
+    name: 18 VER CARRITO(status=paid)
+    meta:
+      id: req_bf61b7d30f67410eb062f141bba32376
+      created: 1757463092694
+      modified: 1757464821034
+      isPrivate: false
+      description: ""
+      sortKey: -1757462006551
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuQHRlc3QuY29tIiwiaWF0IjoxNzU3NDY0MzY5LCJleHAiOjE3NTc1NTA3Njl9.T0e-Y2L3TOJyy_JEwWKVGmnux_vMc5wcdkWYFjfot28VTA2ZfvwKHDbdAN6tkb5hpXNm1PXzVmZVnssiJX9aEg
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f5bd20d7a561480bbb5fe4c16e1f8c67
+    created: 1757381877481
+    modified: 1757381877481
+environments:
+  name: Base Environment
+  meta:
+    id: env_52a4a30d7c044b78bb74286aa8b91ba9
+    created: 1757381877476
+    modified: 1757381877476
+    isPrivate: false
